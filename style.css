@@ -1,54 +1,51 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
     font-family: 'Bebas Neue', cursive;
 }
 
-.container {
-    max-width: 500px;
-    margin: 0 auto;
+body {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(background.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.container {
+    max-width: 500px;
     padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
 }
 
 .profile > img {
-   width: 150px;
-   height: 150px;
-   border: 3px solid #222;
-   border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #222;
+    border-radius: 100%;
 }
 
 .profile > p {
+    margin-top: 20px;
     font-size: 1.8em;
     font-weight: 900;
     letter-spacing: 2px;
-    color: #fff;
+    color: #222;
     text-transform: capitalize;
-    text-align: center;
-}
-
-.link {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
 }
 
 .link > a {
+    display: block;
+    margin-top: 10px;
     text-decoration: none;
     color: #222;
     font-size: 24px;
@@ -56,7 +53,6 @@ html {
     border: 3px solid #222;
     background-color: #eaeaea;
     border-radius: 7px;
-    margin: 5px 10px;
     padding: 10px;
     text-transform: uppercase;
     font-weight: 500;
@@ -67,10 +63,8 @@ html {
 }
 
 .footer {
-    text-align: center;
-}
-
-.footer > i {
-    color: white;
+    margin-top: 20px;
+    color: #222;
     font-size: 20px;
+    font-style: italic;
 }
